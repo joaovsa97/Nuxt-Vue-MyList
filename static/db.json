@@ -1,0 +1,19 @@
+{
+  "animes": [
+    {
+      "nome": "naruto",
+      "imagem": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe",
+      "descricao": "anime"
+    },
+    {
+      "nome": "Dragon Ball",
+      "imagem": "https://s2.glbimg.com/yBe16NO6M4n7UOkI0dMQSvGVw_s=/362x536/https://s2.glbimg.com/kRAtHu8hflIT1gTuyiLmiXoab3U=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2022/m/X/hINrrXSbKLTxk46rBwbQ/2022-2877-dragon-ball-poster.jpg",
+      "descricao": "anime"
+    },
+    {
+      "nome": "Yu Yu Hakusho",
+      "imagem": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/e60626c56bf7437857e0caf7cbc4bf4a.jpe",
+      "descricao": "anime"
+    }
+  ]
+}
