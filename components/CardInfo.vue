@@ -1,8 +1,8 @@
 <template>
   <div id="card" class="rounded-lg">
-    <h2>{{ anime.nome }}</h2>
-    <img :src="anime.imagem" alt="" />
-    <p>{{ anime.descricao }}</p>
+    <h2>{{ item.nome }}</h2>
+    <img :src="item.imagem" alt="" />
+    <p>{{ item.descricao }}</p>
   </div>
 </template>
 
@@ -10,7 +10,7 @@
 export default {
   name: 'CardInfo',
   props: {
-    anime: {
+    item: {
       type: Object,
       default: () => ({}),
     },
@@ -26,5 +26,6 @@ export default {
 }
 #card img {
   width: 100%;
+  height: 300px;
 }
 </style>

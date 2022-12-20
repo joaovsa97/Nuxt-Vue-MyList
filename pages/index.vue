@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="pa-3 container main">
-      <CardInfo v-for="anime in animes" :key="anime.id" :anime="anime"/>
+      <CardInfo v-for="item in items" :key="item.id" :item="item"/>
     </div>
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
   },
   async asyncData({ store }) {
     return {
-      animes: await store.dispatch('animes/getAnime'),
+      items: await store.dispatch('items/getItems'),
     }
   },
   data() {

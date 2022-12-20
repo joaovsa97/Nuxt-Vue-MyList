@@ -1,6 +1,6 @@
 <template>
-  <div class="primary pa-3 d-flex justify-space-around align-center">
-    <h3>LISTA DE ANIMES</h3>
+  <div class="primary pa-3 text-center">
+    <h1 class="mb-1">LISTA DE ANIMES</h1>
     <div>
       <nuxt-link class="black--text warning rounded-sm" to="/">home</nuxt-link>
       <nuxt-link class="black--text success rounded-sm" to="/AddPage"

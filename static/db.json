@@ -1,5 +1,5 @@
 {
-  "animes": [
+  "item": [
     {
       "nome": "naruto",
       "imagem": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe",
@@ -18,7 +18,12 @@
     {
       "nome": "Betty Boop",
       "imagem": "https://esquinamusical.com.br/wp-content/uploads/2022/01/Cartoon-Betty-Boop-PNG-Download-Image.jpg",
-      "descricao": "Cartoon"
+      "descricao": "cartoon"
+    },
+    {
+      "nome": "Bleach",
+      "imagem": "http://pm1.narvii.com/6276/bcf4c5ae0019ee4b641615e00cf339b07fcdfe76_00.jpg",
+      "descricao": "anime"
     }
   ]
 }
