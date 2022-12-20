@@ -29,6 +29,12 @@
       "nome": "Bleach",
       "imagem": "http://pm1.narvii.com/6276/bcf4c5ae0019ee4b641615e00cf339b07fcdfe76_00.jpg",
       "descricao": "anime"
+    },
+    {
+      "nome": "Chainsaw Man",
+      "imagem": "https://kbimages1-a.akamaihd.net/9b90e481-4b79-47e1-a919-3d0a46752177/1200/1200/False/chainsaw-man-vol-1.jpg",
+      "descricao": "Anime",
+      "id": "IyrAAUV"
     }
   ]
 }
