@@ -1,26 +1,31 @@
 {
   "item": [
     {
-      "nome": "naruto",
+      "id": "1",
+      "nome": "Naruto",
       "imagem": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe",
       "descricao": "anime"
     },
     {
+      "id": "2",
       "nome": "Dragon Ball",
       "imagem": "https://s2.glbimg.com/yBe16NO6M4n7UOkI0dMQSvGVw_s=/362x536/https://s2.glbimg.com/kRAtHu8hflIT1gTuyiLmiXoab3U=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2022/m/X/hINrrXSbKLTxk46rBwbQ/2022-2877-dragon-ball-poster.jpg",
       "descricao": "anime"
     },
     {
+      "id": "3",
       "nome": "Yu Yu Hakusho",
       "imagem": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/e60626c56bf7437857e0caf7cbc4bf4a.jpe",
       "descricao": "anime"
     },
     {
+      "id": "4",
       "nome": "Betty Boop",
       "imagem": "https://esquinamusical.com.br/wp-content/uploads/2022/01/Cartoon-Betty-Boop-PNG-Download-Image.jpg",
       "descricao": "cartoon"
     },
     {
+      "id": "5",
       "nome": "Bleach",
       "imagem": "http://pm1.narvii.com/6276/bcf4c5ae0019ee4b641615e00cf339b07fcdfe76_00.jpg",
       "descricao": "anime"

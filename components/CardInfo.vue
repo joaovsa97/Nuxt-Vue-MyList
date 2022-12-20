@@ -1,8 +1,14 @@
 <template>
   <div id="card" class="rounded-lg">
-    <h2>{{ item.nome }}</h2>
-    <img :src="item.imagem" alt="" />
-    <p>{{ item.descricao }}</p>
+    <div class="text-center d-flex align-center justify-center mt-2">
+      <h3>{{ item.nome }}</h3>
+    </div>
+    <div>
+      <img :src="item.imagem" alt="" />
+    </div>
+    <div class="text-center">
+      <h4>{{ item.descricao }}</h4>
+    </div>
   </div>
 </template>
 
@@ -26,6 +32,6 @@ export default {
 }
 #card img {
   width: 100%;
-  height: 300px;
+  height: 280px;
 }
 </style>

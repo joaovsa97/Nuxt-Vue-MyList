@@ -18,6 +18,13 @@
 <script>
 export default {
   name: 'AddPage',
+
+  async asyncData({ store }) {
+    return {
+      items: await store.dispatch('items/getItems'),
+    }
+  },
+
   data() {
     return {
       title: 'Add Page',
@@ -28,14 +35,18 @@ export default {
       },
     }
   },
+
   head() {
     return {
       title: this.title,
     }
   },
+
   methods: {
     addItem() {
-      console.log(this.item)
+      const data = this.item;
+      this.$store.dispatch('items/addItem', data)
+      .then(this.$router.push('/'));
     },
   },
 }

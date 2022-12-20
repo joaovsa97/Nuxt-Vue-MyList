@@ -2,9 +2,11 @@
   <div class="primary pa-3 text-center">
     <h1 class="mb-1">LISTA DE ANIMES</h1>
     <div>
-      <nuxt-link class="black--text warning rounded-sm" to="/">home</nuxt-link>
+      <nuxt-link class="black--text warning rounded-sm" to="/"
+        >PRINCIPAL</nuxt-link
+      >
       <nuxt-link class="black--text success rounded-sm" to="/AddPage"
-        >add</nuxt-link
+        >ADICIONAR</nuxt-link
       >
     </div>
   </div>
