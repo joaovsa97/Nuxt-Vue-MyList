@@ -1,19 +1,18 @@
 <template>
   <div class="primary pa-3 text-center">
     <h1 class="mb-1">LISTA DE ANIMES</h1>
-    <div>
-      <nuxt-link class="black--text warning rounded-sm" to="/"
-        >PRINCIPAL</nuxt-link
-      >
-      <nuxt-link class="black--text success rounded-sm" to="/AddPage"
-        >ADICIONAR</nuxt-link
-      >
-    </div>
+    <button @click="openModal">Add</button>
   </div>
 </template>
 <script>
+
 export default {
   name: 'NavBar',
+  methods: {
+    openModal() {
+      this.$emit('openModal')
+    },
+  },
 }
 </script>
 

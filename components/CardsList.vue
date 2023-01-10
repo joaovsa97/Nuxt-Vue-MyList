@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-cloak>
     <div class="pa-3 container main">
       <CardInfo v-for="item in items" :key="item.id" :item="item"/>
     </div>
@@ -8,20 +8,17 @@
 
 <script>
 import CardInfo from '@/components/CardInfo.vue'
+// import { getItems } from '~/store/items/actions.js'
 
 export default {
-  name: 'Index',
+  name: 'CardsList',
   comments: {
     CardInfo,
-  },
-  async asyncData({ store }) {
-    return {
-      items: await store.dispatch('items/getItems'),
-    }
   },
   data() {
     return {
       title: 'Home',
+      items: [{}],
     }
   },
   head() {
@@ -29,6 +26,16 @@ export default {
       title: this.title,
     }
   },
+  created() {
+    this.$store.dispatch('items/getItems').then((response) => {
+      this.items = response
+    })
+  },
+  // methods:{
+  //   deleteItem(id){
+  //     this.$store.dispatch("items/deleteItem", id)
+  //   }
+  // }
 }
 </script>
 
@@ -37,5 +44,6 @@ export default {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
+  overflow: hidden;
 }
 </style>
