@@ -1,0 +1,7 @@
+// updateItem(item){
+//     const data = {
+//         nome: item.name,
+//         imagem: item.imagem,
+//         descricao: item.descricao
+//     }
+// }

@@ -1,8 +1,8 @@
 <template>
   <v-app dark>
     <div id="content">
-      <NavBar class="mb-3" @openModal="openModal"/>
-      <CardsList @deleteItem="deleteItem"/>
+      <NavBar class="mb-3" @openModal="openModal" />
+      <CardsList @deleteItem="deleteItem" @updateList="updateList" />
       <AddPage v-if="visibility" @closeModal="closeModal" />
     </div>
   </v-app>
@@ -32,6 +32,11 @@ export default {
         document.getElementById('content').style.height = '100vh'
         document.getElementById('content').style.overflow = 'hidden'
       }
+    },
+    updateList() {
+      this.$store.dispatch('items/getItems').then((response) => {
+        this.items = response
+      })
     },
     closeModal() {
       this.visibility = false

@@ -1,14 +1,13 @@
 <template>
-  <div v-cloak>
+  <div>
     <div class="pa-3 container main">
-      <CardInfo v-for="item in items" :key="item.id" :item="item"/>
+      <CardInfo v-for="item in items" :key="item.id" :item="item" />
     </div>
   </div>
 </template>
 
 <script>
 import CardInfo from '@/components/CardInfo.vue'
-// import { getItems } from '~/store/items/actions.js'
 
 export default {
   name: 'CardsList',
@@ -31,11 +30,11 @@ export default {
       this.items = response
     })
   },
-  // methods:{
-  //   deleteItem(id){
-  //     this.$store.dispatch("items/deleteItem", id)
-  //   }
-  // }
+  beforeUpdate(){
+    this.$store.dispatch('items/getItems').then((response) => {
+      this.items = response
+    })
+  }
 }
 </script>
 
